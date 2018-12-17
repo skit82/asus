@@ -59,6 +59,9 @@
     margin-right: auto;
     padding-bottom: 25px;
 }
+.about-us__list .slick-track {
+  padding-bottom: 0px;
+}
 .slick-track:before,
 .slick-track:after
 {
@@ -91,6 +94,11 @@
 {
     display: block;
     margin: 0 auto;
+    /*margin-bottom: 20px;*/
+}
+.slick-slide.about-us__item img {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .slick-slide.slick-loading img
 {
@@ -121,44 +129,48 @@
 }
 .prev-left {
   width: 25px;
-  height: 41px;
+  height: 25px;
 }
 .prev-right {
   width: 25px;
-  height: 41px;
+  height: 25px;
 }
 .prev-left {
   position: absolute;
-  left: 0px;
-  top: 100px;
+  left: 10px;
+  top: 190px;
   z-index: 1;
+  opacity: 0.5;
 }
 .prev-right {
   position: absolute;
-  right: 0px;
-  top: 100px;
+  right: 10px;
+  top: 190px;
   z-index: 1;
+  opacity: 0.5;
 }
 @media (min-width: 768px) {
   .prev-left {
-    width: 30px;
-    height: 80px;
+    width: 35px;
+    height: 35px;
   }
   .prev-right {
-    width: 30px;
-    height: 80px;
+    width: 35px;
+    height: 35px;
   }
   .prev-left {
     position: absolute;
-    left: -40px;
-    top: 100px;
+    left: 0px;
+    top: 176px;
     z-index: 1;
+    opacity: 0.5;
   }
   .prev-right {
     position: absolute;
-    right: -40px;
-    top: 100px;
+    right: 0px;
+    top: 176px;
     z-index: 1;
+    opacity: 0.5;
   }
 }
 @media (min-width: 1024px) {
@@ -172,15 +184,17 @@
   }
   .prev-left {
   position: absolute;
-  left: -80px;
-  top: 105px;
+  left: -15px;
+  top: 176px;
   z-index: 1;
+  opacity: 0.5;
 }
 .prev-right {
   position: absolute;
-  right: -80px;
-  top: 105px;
+  right: -14px;
+  top: 176px;
   z-index: 1;
+  opacity: 0.5;
 }
 }
 .left {

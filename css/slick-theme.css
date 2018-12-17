@@ -104,7 +104,7 @@
 }
 .slick-dotted.slick-slider
 {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .banner__list .slick-dots {
     position: absolute;
@@ -140,11 +140,12 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     margin: 0 5px;
     padding: 0;
     background-color: #ffffff;
+    border-radius: 100%;
     cursor: pointer;
 }
 .slick-dots li
@@ -198,14 +199,15 @@
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
 
     content: '';
     text-align: center;
 
     opacity: .25;
     border: 1px solid #00b4ff;
+    border-radius: 100%;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
