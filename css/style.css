@@ -870,6 +870,24 @@ input:checked ~ .feedback__icon::after {
 	border: 1px solid #0094f2;
 	cursor: pointer;
 }
+.about-us__title {
+	display: block;
+	width: 140px;
+	position: absolute;
+  margin: 0px;
+  padding: 0px;
+  left: 22px;
+  top: 125px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+.about-us__item:hover .about-us__title {
+	display: none;
+	cursor: pointer;
+}
 /*.about-us__item:hover {*/
 	/*border: 1px solid #0094f2;*/
 /*}*/
@@ -999,9 +1017,32 @@ input:checked ~ .feedback__icon::after {
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
+    margin-bottom: 30px;
 	}
 	.sidebar {
 	  display: block;
+  	}
+  	.info__title {
+	  	margin: 0px;
+	    padding: 0px;
+	    margin-bottom: 30px;
+	    font-size: 20px;
+	    font-weight: 400;
+	    height: 35px;
+	    line-height: 34px;
+	    color: #ffffff;
+	    text-align: center;
+	    background-color: rgb(0, 0, 0);
+	    border-radius: 10px;
+  	}
+  .info__link {
+  	display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 59px;
   }
 	.order__text {
 		font-size: 16px;
@@ -1047,7 +1088,7 @@ input:checked ~ .feedback__icon::after {
   max-width: 1140px;
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
 }
@@ -1300,12 +1341,18 @@ input:checked ~ .feedback__icon::after {
 }
 .catalog-list__inner span {
 	display: block;
-  margin-top: 25px;
-  margin-bottom: 30px;
-  font-size: 15px;
-  font-weight: 100;
+	max-width: 120px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
   text-align: center;
-  color: #fc7b3e;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #0094f2;
   transition: 0.40s;
 }
 .catalog-list__inner span:hover {
@@ -1409,7 +1456,8 @@ input:checked ~ .feedback__icon::after {
 		transform: scale(1.05, 1.05);
 	}
 	.catalog-list__inner span {
-		font-size: 20px;
+		max-width: 180px;
+		font-size: 16px;
 	}
 }
 @media (min-width: 1024px) {
@@ -1444,7 +1492,7 @@ input:checked ~ .feedback__icon::after {
 
 .filter-list-top-header {
 	width: 270px;
-	/*margin: 0 auto;*/
+	margin: 0 auto;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -1496,6 +1544,9 @@ input:checked ~ .feedback__icon::after {
 @media (min-width: 1024px) {
 	.filter-list-top-body a {
 		display: block;
+	}
+	.filter-list {
+		margin-bottom: 48px;
 	}
 	.filter-list-top-body {
 		
@@ -1632,7 +1683,8 @@ input:checked ~ .feedback__icon::after {
 	margin: 0 auto;
 }
 .location__map {
-	
+	display: block;
+	text-align: center;
 }
 .location__img {
 	max-width: 100%;
@@ -1681,8 +1733,8 @@ input:checked ~ .feedback__icon::after {
 	  /*padding-left: 10px;*/
 	}
 	.contact__list {
-		flex-wrap: nowrap;
-		justify-content: flex-start;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 }
 @media (min-width: 1024px) {
@@ -1705,8 +1757,8 @@ input:checked ~ .feedback__icon::after {
 	}
 	.contact__list {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 20px;
 	}
 	.contact__text {
@@ -1751,26 +1803,28 @@ input:checked ~ .feedback__icon::after {
 }
 .addres__title {
 	margin: 0px;
-  padding: 10px 0px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
+  line-height: 35px;
+  height: 35px;
   color: #fff;
   text-align: center;
   background-color: #008cd6;
-  border: 2px solid #cccccc;
-  border-bottom: none;
-}
-.addres__block {
-	border: 2px solid #cccccc;
+  border-radius: 10px;
 }
 .addres__link {
 	display: block;
-  padding: 15px 10px;
-  font-size: 24px;
+	width: 270px;
+	height: 35px;
+  margin: 20px 0px;
+  font-size: 20px;
   font-weight: 400;
-  color: #4e4c4c;
+  line-height: 35px;
+  color: #565656;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
+  background-image: url(../img/model-fon2.png);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 .addres__link:hover {
 	color: #008cd6;
@@ -1778,6 +1832,7 @@ input:checked ~ .feedback__icon::after {
 @media (min-width: 1024px) {
 	.addres {
 		margin: 0px;
+		margin-bottom: 75px;
 	}
 }
 .flashcard {
