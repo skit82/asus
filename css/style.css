@@ -89,7 +89,8 @@ input[type="radio"].visually-hidden {
 	margin: 0px;
 }
 .header-logo__link {
-	display: block;
+	display: flex;
+  flex-direction: column;
   text-align: center;
   text-decoration: none;
 }
@@ -98,6 +99,12 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+}
+.header-logo__img {
+	display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .header-menu__list {
 	display: -webkit-box;
@@ -137,8 +144,8 @@ input[type="radio"].visually-hidden {
 	width: 270px;
   height: auto;
   position: absolute;
-  left: 0px;
-  top: 40px;
+  right: 0px;
+  top: 45px;
   background-color: #ffffff;
   margin: 0px;
   padding: 0px;
@@ -242,8 +249,8 @@ input[type="radio"].visually-hidden {
 		width: 390px;
 	}
 	.header-menu__inner {
-		padding-top: 12px;
-    padding-bottom: 12px;
+		padding-top: 5px;
+    padding-bottom: 5px;
 	}
 	.header-top {
 		display: block;
@@ -293,10 +300,10 @@ input[type="radio"].visually-hidden {
 		    -ms-flex-direction: row;
 		        flex-direction: row;
 		        margin: 0px;
-		        margin-top: 6px;	
+		        margin-top: 15px;	
 	}
 	.header-menu__item:hover {
-		margin-bottom: -12px;	
+		margin-bottom: -5px;	
 		border-bottom: 4px solid #000;
 	}
 	.header-menu__item:hover .header-menu__sub {
@@ -577,6 +584,9 @@ input[type="radio"].visually-hidden {
 .service {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+.service a {
+	text-decoration: none;
 }
 .service__title {
 	margin: 0px 10px;
@@ -863,15 +873,17 @@ input:checked ~ .feedback__icon::after {
 	text-align: left;
 }
 .about-us__block {
-	opacity: 0;
-}
-.about-us__block:hover {
 	opacity: 1;
 	border: 1px solid #0094f2;
-	cursor: pointer;
 }
+/*.about-us__block:hover {*/
+	/*opacity: 1;*/
+	/*border: 1px solid #0094f2;*/
+	/*cursor: pointer;*/
+/*}*/
 .about-us__title {
-	display: block;
+	/*display: block;*/
+	display: none;
 	width: 140px;
 	position: absolute;
   margin: 0px;
@@ -884,10 +896,10 @@ input:checked ~ .feedback__icon::after {
   color: #fff;
   z-index: 2;
 }
-.about-us__item:hover .about-us__title {
-	display: none;
-	cursor: pointer;
-}
+/*.about-us__item:hover .about-us__title {*/
+	/*display: none;*/
+	/*cursor: pointer;*/
+/*}*/
 /*.about-us__item:hover {*/
 	/*border: 1px solid #0094f2;*/
 /*}*/
@@ -1150,11 +1162,17 @@ input:checked ~ .feedback__icon::after {
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .promo__link {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 	-ms-align-self: center;
 	align-self: center;
 	text-decoration: none;
 }
 .promo__title {
+	align-self: center;
 	font-size: 20px;
 	font-weight: 400;
 	color: #333333;
@@ -1823,11 +1841,12 @@ input:checked ~ .feedback__icon::after {
   color: #565656;
   text-decoration: none;
   text-align: center;
-  background-image: url(../img/model-fon2.png);
+  /*background-image: url(../img/model-fon.png);*/
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 .addres__link:hover {
-	color: #008cd6;
+	color: #fff;
+	background-color: #0094f2;
 }
 @media (min-width: 1024px) {
 	.addres {
