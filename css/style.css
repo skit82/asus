@@ -126,12 +126,32 @@ input[type="radio"].visually-hidden {
 }
 .header-menu__link {
 	display: block;
-	/*padding: 10px 0;*/
+	padding: 5px 0px;
+	padding-left: 32px;
 	text-align: center;
 	font-size: 22px;
-	font-weight: 400;	
+	font-weight: 400;
+	line-height: 30px;	
 	color: #4e4c4c;
 	text-decoration: none;
+}
+.header-menu__item--company {
+	background-image: url(../img/okompanii.png);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: 0px 2px;
+}
+.header-menu__item--remont {
+	background-image: url(../img/service.png);
+	background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: 10px 6px;
+}
+.header-menu__item--contact {
+	background-image: url(../img/contacts1.png);
+	background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: 5px 0px;
 }
 .header-menu__item {
 	width: 100%;
@@ -215,6 +235,30 @@ input[type="radio"].visually-hidden {
   color: #646464;
 }
 @media (min-width: 767px) {
+	.header-menu__item--company {
+		background-image: url(../img/okompanii.png);
+		background-repeat: no-repeat;
+		background-image: url(../img/okompanii.png);
+	  background-repeat: no-repeat;
+	  background-size: 35px;
+	  background-position: 0px 0px;
+	}
+	.header-menu__item--remont {
+		background-image: url(../img/service.png);
+		background-repeat: no-repeat;
+  	background-size: 12%;
+  	background-position: 10px 2px;
+	}
+	.header-menu__item--contact {
+		background-image: url(../img/contacts1.png);
+		background-repeat: no-repeat;
+  	background-size: 25%;
+  	background-position: 8px 0px;
+	}
+	.header-menu__link {
+		padding-left: 32px;
+		line-height: 16px;
+	}
 	.header__img {
 		margin-right: 5px;
 	}
@@ -246,7 +290,7 @@ input[type="radio"].visually-hidden {
 	}
 	.header-menu__list {
 		display: flex;
-		width: 390px;
+		width: 490px;
 	}
 	.header-menu__inner {
 		padding-top: 5px;
